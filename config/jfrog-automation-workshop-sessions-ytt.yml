@@ -10,7 +10,7 @@ metadata:
   name: #@ "jfrog-automation-" + labenv.env_id + "-" + labenv.env_instance
 spec:
   environment:
-    name: jfrog-automation
+    name: jfrog-automation-env
   session:
     username: #@ labenv.env_username
     password: #@ labenv.env_password

@@ -15,7 +15,8 @@ spec:
   - jfrog
   - artifactory
   content:
-    image: silval/jfrog-automation-workshop:latest
+    image: jrobinson/eduk8s-tas:latest
+    # silval/jfrog-automation-workshop:latest
     files: github.com/lsilvapvt/jfrog-automation-workshop
   session:
     namespaces:

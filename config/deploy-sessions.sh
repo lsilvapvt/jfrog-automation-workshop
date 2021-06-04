@@ -14,7 +14,7 @@
 
 kubectl apply -k "github.com/eduk8s/eduk8s?ref=21.05.10.1"
 
-sleep 5
+sleep 10
 
 # kubectl create secret tls -n eduk8s yourcompany-tls --cert=./yourcompany.crt --key=./yourcompany.key
 
@@ -28,7 +28,7 @@ sleep 5
 
 kubectl apply -f jfrog-automation-workshop.yml
 
-sleep 2
+sleep 5
 
 kubectl apply -f jfrog-automation-workshop-env.yml
 
