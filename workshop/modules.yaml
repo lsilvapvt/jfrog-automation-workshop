@@ -1,0 +1,17 @@
+modules:
+    index:
+        name: Workshop Overview
+        exit_sign: Start Workshop
+    concepts/01_jfrog_platform:
+        name: JFrog Platform
+    concepts/02_jfrog_automation:
+        name: JFrog Platform
+    labs/01_jfrog_rest_api:
+        name: REST API
+    finish:
+        name: Workshop Summary
+        exit_sign: Finish Workshop
+config:
+    vars:
+    - name: LAB_SLOT_ID
+      value: lucianos

@@ -1,0 +1,10 @@
+*.swp
+.bash_history
+.cache
+.config/
+.kube/
+frontend-src/db.sqlite3
+__pycache__
+credentials.yml
+*.crt 
+*.key 

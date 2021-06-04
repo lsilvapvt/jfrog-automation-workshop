@@ -1,0 +1,23 @@
+apiVersion: training.eduk8s.io/v1alpha1
+kind: TrainingPortal
+metadata:
+  name: jfrog-automation-fundamentals
+spec:
+  portal:
+    registration:
+      type: anonymous
+    # index: https://www.example.com/
+    catalog:
+      visibility: public
+    password: superfr0g
+     #registration:
+       #type: anonymous
+       #type: one-step
+       #enabled: false
+  workshops:
+  - name: jfrog-automation-fundamentals
+    capacity: 10
+    reserved: 1
+    expires: 4h
+    orphaned: 15m
+    

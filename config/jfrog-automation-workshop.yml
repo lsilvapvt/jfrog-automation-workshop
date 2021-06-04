@@ -1,0 +1,32 @@
+apiVersion: training.eduk8s.io/v1alpha2
+kind: Workshop
+metadata:
+  name: jfrog-automation-fundamentals
+spec:
+  title: JFrog Platform Automation Fundamentals
+  description: Fundamentals of JFrog Platform Automation Capabilities
+  url: https://github.com/lsilvapvt/jfrog-automation-workshop
+  vendor: edu.workshops.zone
+  authors:
+  - Luciano Silva
+  difficulty: intermediate
+  duration: 1h
+  tags:
+  - jfrog
+  - artifactory
+  content:
+    image: silval/jfrog-automation-workshop:latest
+    files: github.com/lsilvapvt/jfrog-automation-workshop
+  session:
+    namespaces:
+      budget: medium
+    applications:
+      terminal:
+        enabled: true
+        layout: split
+      console:
+        enabled: false
+      editor:
+        enabled: false
+      slides:
+        enabled: false        

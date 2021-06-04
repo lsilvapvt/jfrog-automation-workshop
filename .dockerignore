@@ -1,0 +1,10 @@
+.dockerignore
+.eduk8signore
+.git
+.gitignore
+CREDITS.md
+Dockerfile
+LICENSE
+README.md
+kustomization.yaml
+resources
