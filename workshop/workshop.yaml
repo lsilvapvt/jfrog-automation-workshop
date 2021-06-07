@@ -3,7 +3,6 @@ name: JFrog Automatioin Fundamentals
 modules:
     activate:
     - index
-    - concepts/01_jfrog_platform
-    - concepts/02_jfrog_automation
+    - concepts/03_jfrog_restapi
     - labs/01_jfrog_rest_api 
     - finish
