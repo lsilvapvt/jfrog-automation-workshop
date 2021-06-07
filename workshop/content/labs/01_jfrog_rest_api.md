@@ -4,7 +4,8 @@
 
 ### Base URL
 
-The Platform REST URL is constructed of: `<JFrog URL>/<Service Context>/`
+The Platform REST URL is constructed of:  
+`<JFrog URL>/<Service Context>/`
 
 For example: 
 
@@ -21,19 +22,19 @@ For example:
 Artifactory's REST API supports these forms of authentication:
 
 - Basic authentication using your username and password  
-  e.g. `curl --user $USERNAME:$ENCRYPTEDPASSWORD <JFrog URL>/<Service Context>/`
+  `curl --user $USERNAME:$ENCRYPTEDPASSWORD <JFrog URL>/<Service Context>/`
 
 - Basic authentication using your username and API Key  
-  e.g. `curl --user $USERNAME:$APIKEY <JFrog URL>/<Service Context>/`
+  `curl --user $USERNAME:$APIKEY <JFrog URL>/<Service Context>/`
 
 - Using a dedicated header (X-JFrog-Art-Api) with your API Key  
-  e.g. `curl -H "X-JFrog-Art-Api:$APIKEY" <JFrog URL>/<Service Context>/`
+  `curl -H "X-JFrog-Art-Api:$APIKEY" <JFrog URL>/<Service Context>/`
 
 - Using an access token instead of a password for basic authentication  
-  e.g. `curl --user $USERNAME:$ACCESSTOKEN <JFrog URL>/<Service Context>/`
+  `curl --user $USERNAME:$ACCESSTOKEN <JFrog URL>/<Service Context>/`
 
 - Using an access token as a bearer token in an authorization header (Authorization: Bearer) with your access token
-  e.g. `curl -H "Authorization: Bearer $JFROGACCESSTOKEN" <JFrog URL>/<Service Context>/`  
+  `curl -H "Authorization: Bearer $JFROGACCESSTOKEN" <JFrog URL>/<Service Context>/`  
     
   Test it with the system ping API endpoint:  
   ```execute

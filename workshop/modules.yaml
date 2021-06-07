@@ -13,3 +13,11 @@ config:
     vars:
     - name: LAB_SLOT_ID
       value: lucianos
+    - name: LAB_USERNAME
+      value: myuser
+    - name: LAB_PASSWORD
+      value: mypassword
+    - name: JFROG_URL
+      value: myurl
+    - name: JFROG_ACCESSTOKEN
+      value: mytoken
