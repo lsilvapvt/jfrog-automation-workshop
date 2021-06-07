@@ -30,4 +30,4 @@ spec:
       editor:
         enabled: true
       slides:
-        enabled: false        
+        enabled: true        
