@@ -28,6 +28,6 @@ spec:
       console:
         enabled: false
       editor:
-        enabled: false
+        enabled: true
       slides:
         enabled: false        

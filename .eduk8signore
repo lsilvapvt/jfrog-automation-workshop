@@ -6,4 +6,6 @@
 ..//README.md
 ./kustomization.yaml
 ./resources
+./config/jfrog*.yml
 ./config/credentials.yml
+./config/*.sh

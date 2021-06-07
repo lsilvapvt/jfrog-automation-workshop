@@ -52,6 +52,23 @@ Artifactory server [link](https://{{ JFROG_URL }})
    echo Hello!
 ```
 
+```dashboard:open-url
+url: https://{{ JFROG_URL }}/
+```
+
+
+```dashboard:open-dashboard
+name: Terminal
+```
+
+```dashboard:delete-dashboard
+name: Example
+```
+
+```editor:open-file
+file: ~/config/credentials-sample.yml
+```
+
 <br/>
 
 ---
