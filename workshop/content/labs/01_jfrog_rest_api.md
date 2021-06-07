@@ -37,11 +37,15 @@ Artifactory's REST API supports these forms of authentication:
     
   Test it with the system ping API endpoint:  
   ```execute
+  curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://{{ JFROG_URL }}/artifactory/api/system/ping
+  ```
+
+  ```execute-2
   curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
   ```
 
 
-Artifactory server [link](https://$JFROG_URL)
+Artifactory server [link](https://{{ JFROG_URL }})
 
 ```copy-and-edit
    echo Hello!

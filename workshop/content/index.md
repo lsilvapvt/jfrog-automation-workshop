@@ -1,14 +1,9 @@
-[<img src="images/Jfrog_Green_RGB.png" alt="JFrog" align="left" style="width:150px;background-color:transparent;border:none;" />](https://jfrog.com)
-
-<br/>
-<br/>
-<br/>
-<br/>
+[<img src="images/Jfrog_Green_RGB.png" alt="JFrog" style="width:150px;background-color:transparent;border:none;" />](https://jfrog.com)
 
 <br/>
 <br/>
 
-## JFrog Platform Automation capabilities.
+## JFrog Platform Automation
 
 <br/>
 <br/>
