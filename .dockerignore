@@ -8,3 +8,4 @@ LICENSE
 README.md
 kustomization.yaml
 resources
+config/credentials.yml

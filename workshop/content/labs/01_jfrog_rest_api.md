@@ -33,7 +33,7 @@ Artifactory's REST API supports these forms of authentication:
 - Using an access token instead of a password for basic authentication  
   `curl --user $USERNAME:$ACCESSTOKEN <JFrog URL>/<Service Context>/`
 
-- Using an access token as a bearer token in an authorization header (Authorization: Bearer) with your access token
+- Using an access token as a bearer token in an authorization header (Authorization: Bearer) with your access token  
   `curl -H "Authorization: Bearer $JFROGACCESSTOKEN" <JFrog URL>/<Service Context>/`  
     
   Test it with the system ping API endpoint:  
