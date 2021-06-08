@@ -52,14 +52,16 @@ Artifactory server [link](https://{{ JFROG_URL }})
    echo Hello!
 ```
 
+```dashboard:open-dashboard
+name: Platform
+```
+
+
 ```dashboard:open-url
+name: Platform
 url: https://{{ JFROG_URL }}/
 ```
 
-
-```dashboard:open-dashboard
-name: Terminal
-```
 
 ```dashboard:delete-dashboard
 name: Example

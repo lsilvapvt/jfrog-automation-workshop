@@ -30,4 +30,7 @@ spec:
       editor:
         enabled: true
       slides:
-        enabled: true        
+        enabled: true       
+    dashboards:
+        - name: Platform
+          url: "https://www.google.com"                   
