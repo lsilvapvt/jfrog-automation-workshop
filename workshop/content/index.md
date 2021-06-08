@@ -1,16 +1,14 @@
-[<img src="images/Jfrog_Green_RGB.png" alt="JFrog" style="width:150px;background-color:transparent;border:none;" />](https://jfrog.com)
+[<img src="images/Jfrog_Green_RGB.png" alt="JFrog" style="width:120px;background-color:transparent;border:none;" />](https://jfrog.com)
 
 <br/>
-<br/>
 
-## JFrog Platform Automation
+### JFrog Platform Automation
 
-<br/>
 <br/>
 
 ---
 
-## Agenda
+### Agenda
 
 <br/>
 

@@ -1,0 +1,13 @@
+items.find(
+    {
+        "repo":{"$eq":"default-generic-local"},
+        "path":{"$match":"enterprise*"},
+        "size":{"$gt":"200000000"},
+        "$or":[
+            {"name":{"$match":"*.mp4"}},
+            {"name":{"$match":"*.mov"}}
+        ]
+  
+    }
+).include("name","size")
+.sort({"$desc":["size","name"]})

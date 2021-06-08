@@ -1,0 +1,6 @@
+items.find(
+    {
+        "type":"file"
+    }
+).include("name","path","repo","size")
+.sort({"$desc":["size"]}).limit(10)

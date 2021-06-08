@@ -1,0 +1,14 @@
+{
+    "files": [
+      {
+        "pattern": "jfrog-ecosystem-overview-recording-english.mp4",
+        "target": "default-generic-local/enterprise-training/",
+        "targetProps": "type=video;level=enterprise"
+      },
+      {
+        "pattern": "jfrog_automation_narasimha.mp4",
+        "target": "default-generic-local/enterprise-plus-training/",
+        "targetProps": "type=video;level=enterpriseplus"
+      }
+    ]
+  }

@@ -1,0 +1,15 @@
+{
+    "files": [
+      {
+        "pattern": "*.mp4",
+        "target": "default-generic-local/enterprise-training/"
+      },
+      {
+        "pattern": "*.mp4",
+        "target": "default-generic-local/enterprise-plus-training/"
+      },
+      {
+        "pattern": "default-generic-local/enterprise*"
+      }
+    ]
+  }

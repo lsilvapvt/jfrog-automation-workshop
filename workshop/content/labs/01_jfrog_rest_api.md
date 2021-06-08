@@ -22,7 +22,7 @@ For example:
 Artifactory's REST API supports these forms of authentication:
 
 - Basic authentication using your username and password  
-  `curl --user $USERNAME:$ENCRYPTEDPASSWORD <JFrog URL>/<Service Context>/`
+  `curl --user $USERNAME:$ENCRYPTEDPASSWORD <JFrog URL>/<Service Context>`
 
 - Basic authentication using your username and API Key  
   `curl --user $USERNAME:$APIKEY <JFrog URL>/<Service Context>/`
@@ -41,35 +41,21 @@ Artifactory's REST API supports these forms of authentication:
   curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://{{ JFROG_URL }}/artifactory/api/system/ping
   ```
 
+  GET General System Configuration:  
   ```execute-2
-  curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
+  curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/configuration
   ```
 
+  GET service ID 
+  ```execute
+  curl -H "Authorization: Bearer $JFROGACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/service_id
+  ```
 
-Artifactory server [link](https://{{ JFROG_URL }})
-
-```copy-and-edit
-   echo Hello!
-```
-
-```dashboard:open-dashboard
-name: Platform
-```
-
-
-```dashboard:open-url
-name: Platform
-url: https://{{ JFROG_URL }}/
-```
-
-
-```dashboard:delete-dashboard
-name: Example
-```
-
-```editor:open-file
-file: ~/config/credentials-sample.yml
-```
+  Launch JFrog Platform user interface
+  ```dashboard:open-url
+  name: Platform
+  url: https://$JFROG_URL/
+  ```
 
 <br/>
 

@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "pattern": "default-generic-local/enterprise-training/(*.mp4)",
+      "target": "./mydownloads/enterprise-{1}",
+      "flat": "true"
+    },
+    {
+      "pattern": "default-generic-local/enterprise-plus-training/(*.mp4)",
+      "target": "./mydownloads/enterpriseplus-{1}",
+      "flat": "true"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "key": "super-docker-local",
+    "rclass" : "local",
+    "packageType": "docker",
+    "description": "The local repository for super docker images",
+    "xrayIndex" : "false"
+}

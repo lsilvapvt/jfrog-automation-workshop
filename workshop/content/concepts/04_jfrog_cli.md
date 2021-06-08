@@ -1,6 +1,8 @@
-### JFrog REST API
+### JFrog CLI
 
 <br/>
+
+The JFrog CLI Can be [downloaded](https://jfrog.com/getcli/) and installed on multiple clients.
 
 - Extensive and advanced API for all JFrog products
 
@@ -17,9 +19,6 @@
 
 - Different options for authentication (basic auth, API key, access token)
 
-- Use it via curl scripting or more sophisticated languages for advanced automation
-
-- Most calls return JSON objects
 
 ---
 

@@ -1,0 +1,19 @@
+{
+    "files": [
+      {
+        "aql": {
+          "items.find": {
+            "repo":{"$eq":"default-generic-local"},
+            "path":{"$match":"enterprise*"},
+            "size":{"$gt":"10000000"},
+            "$or":[
+                {"name":{"$match":"*.mp4"}},
+                {"name":{"$match":"*.mov"}}
+            ]              
+          }
+        },
+        "sortBy": ["size","name"],
+        "sortOrder": "desc"
+      }
+    ]
+  }
