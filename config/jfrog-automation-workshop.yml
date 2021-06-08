@@ -33,4 +33,4 @@ spec:
         enabled: true       
     dashboards:
         - name: Platform
-          url: "https://www.google.com"                   
+          url: "https://lucianos.jfrog.io/"                   
