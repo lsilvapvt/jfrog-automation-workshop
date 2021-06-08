@@ -37,10 +37,8 @@ Artifactory's REST API supports these forms of authentication:
   `curl -H "Authorization: Bearer $ACCESSTOKEN" <JFrog URL>/<Service Context>/`  
     
   Test the System Ping API endpoint:  
-  ```terminal:execute
-  command: curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
-  clear: true
-  session: 1
+  ```execute
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
   ```
 
   GET service ID 
@@ -49,10 +47,8 @@ Artifactory's REST API supports these forms of authentication:
   ```
 
   GET General System Configuration:    
-  ```terminal:execute
-  command: curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/configuration
-  clear: true
-  session: 2
+  ```execute-2
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/configuration
   ```
 
   Launch JFrog Platform user interface
