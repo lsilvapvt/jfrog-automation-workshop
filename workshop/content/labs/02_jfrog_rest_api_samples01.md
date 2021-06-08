@@ -16,7 +16,7 @@
 
 3. Inspect the repository configuration file used above ([spec](https://www.jfrog.com/confluence/display/JFROG/Repository+Configuration+JSON)):
   ```editor:open-file
-  file: $HOME/files/superDockerRepo.json
+  file: ./files/superDockerRepo.json
   ```
 
 4. **Retrieve a repository's information** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-RepositoryConfiguration)):
@@ -25,9 +25,9 @@
   ```
 
 5. Change the repository configuration file to enable XRay indexing (set value to `true`) ([spec](https://www.jfrog.com/confluence/display/JFROG/Repository+Configuration+JSON)) and save the file:
-  ```editor:select-matching-text
-  file: $HOME/files/superDockerRepo.json
-  text: "xrayIndex" : \"false\""
+  ```editor:open-file
+  file: ./files/superDockerRepo.json
+  line: 6
   ```
 
 6. **Update the repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateRepositoryConfiguration)):
