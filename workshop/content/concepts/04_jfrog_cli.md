@@ -4,27 +4,67 @@
 
 The JFrog CLI Can be [downloaded](https://jfrog.com/getcli/) and installed on multiple clients.
 
-- Extensive and advanced API for all JFrog products
+It is a smart client with a simple interface to JFrog products
 
-- Different domains of functionality 
-  (repositories, builds, security, etc.)
+- Aimed for automation and for simplifying automation scripts by making your scripts more efficient, reliable and maintainable. 
 
-- Utilized by the UI, CLI and other tools
+#### Advantages:  
 
-- Can be used from any automation you might implement 
+  - High level functionality (Parallelism, resumability, wildcards, etc.)  
+  - Checksum awareness  
+  - Multiple configurations support  
+  - Simulation mode  
+  - CLI Plugins supported ([link](https://github.com/jfrog/jfrog-cli-plugins-reg))  
 
-- Fully documented and maintained
 
-- Include new released functionality
+### JFrog CLI Syntax
 
-- Different options for authentication (basic auth, API key, access token)
+`jfrog  target  command-name  global-options  command-options  arguments`
 
+Possible Targets:
+
+```
+   rt          Artifactory commands
+   bt          Bintray commands
+   mc          Mission Control commands
+   xr          Xray commands
+```
+
+Command to execute:
+
+```
+  config
+  upload & download
+  copy, move, delete
+  search & properties
+  build integration
+  create release bundle
+  ...
+```
+
+Global Options:
+```
+  --url
+  --user
+  --password
+  --ssh-key-path
+```
+
+Command options:
+```
+  --props
+  --recursive
+  --regexp
+  --threads
+  --dry-run
+  --deb
+```
 
 ---
 
-References
+#### References
 
-- [JFrog REST API documentation](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-Authentication)
+- [JFrog CLI documentation](https://www.jfrog.com/confluence/display/CLI/JFrog+CLI)
 
 ---
 

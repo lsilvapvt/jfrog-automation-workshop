@@ -23,7 +23,7 @@
 
 ---
 
-References
+#### References
 
 - [JFrog REST API documentation](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-Authentication)
 
