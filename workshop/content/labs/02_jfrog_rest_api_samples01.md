@@ -1,8 +1,5 @@
-### REST API - Repositories
 
-<br/>
-
-### Managing Artifactory Repositories with the JFrog REST API
+### Managing Artifactory Repositories
 
 1. **Get all repositories** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetRepositories)):  
   ```execute

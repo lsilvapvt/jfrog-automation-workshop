@@ -16,7 +16,6 @@ spec:
   - artifactory
   content:
     image: silval/jfrog-automation-workshop:latest
-    # jrobinson/eduk8s-tas:latest
     files: github.com/lsilvapvt/jfrog-automation-workshop
   session:
     namespaces:
@@ -31,6 +30,6 @@ spec:
         enabled: true
       slides:
         enabled: true       
-    dashboards:
-        - name: Platform
-          url: "https://lucianos.jfrog.io/"                   
+    # dashboards:
+    #     - name: Platform
+    #       url: "https://www.google.com"                   
