@@ -6,5 +6,6 @@ modules:
     - concepts/03_jfrog_restapi
     - labs/01_jfrog_rest_api 
     - labs/02_jfrog_rest_api_samples01
+    - labs/04_jfrog_projects_01
     - concepts/04_jfrog_cli
     - finish

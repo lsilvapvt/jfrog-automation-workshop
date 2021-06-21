@@ -8,6 +8,8 @@ modules:
         name: REST API - Authentication
     labs/02_jfrog_rest_api_samples01:
         name: REST API - Repositories
+    labs/04_jfrog_projects_01:
+        name: REST API - Projects
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     finish:
