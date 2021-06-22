@@ -32,7 +32,12 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST https://$JFROG_URL/artifactory/api/repositories/super-docker-local -H 'Content-Type: application/json' -d @$HOME/files/superDockerRepo.json
   ```
 
-7. **Delete the repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-DeleteRepository)):
+7. **Get a repository's scheduled replication status** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-ScheduledReplicationStatus)):
+  ```execute
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/artifactory/api/replication/super-docker-local
+  ```
+
+8. **Delete the repository** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-DeleteRepository)):
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE https://$JFROG_URL/artifactory/api/repositories/super-docker-local
   ```

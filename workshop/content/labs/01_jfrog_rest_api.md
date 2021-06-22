@@ -41,6 +41,11 @@ Artifactory's REST API supports these forms of authentication:
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
   ```
 
+  GET System Information  
+  ```execute
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system
+  ```
+
   GET Artifactory Licenses  
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/licenses
@@ -50,6 +55,12 @@ Artifactory's REST API supports these forms of authentication:
   ```execute-2
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/configuration
   ```
+
+  GET Storage Summary information:    
+  ```execute
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/storageinfo
+  ```
+
 
   Launch JFrog Platform user interface
   ```dashboard:open-url
