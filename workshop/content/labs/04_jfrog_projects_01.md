@@ -3,7 +3,7 @@
 
 1. **Get all projects** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-PROJECTS)):  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL//access/api/v1/projects
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/access/api/v1/projects
   ```
 
 2. **Create a new project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-AddaNewProject)):  
@@ -15,32 +15,32 @@
   
   Execute the REST API command to create the new project:  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST https://$JFROG_URL//access/api/v1/projects/ -H 'Content-Type: application/json' -d @$HOME/files/projects/shire_project.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST https://$JFROG_URL/access/api/v1/projects/ -H 'Content-Type: application/json' -d @$HOME/files/projects/shire_project.json
   ```
 
 3. **Get details of a project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetProject)):  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL//access/api/v1/projects/shire
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/access/api/v1/projects/shire
   ```
 
 4. **Update configuration of an existing project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateExistingProjectProperties)):  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL//access/api/v1/projects/shire -H 'Content-Type: application/json' -d @$HOME/files/projects/shire_project.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/access/api/v1/projects/shire -H 'Content-Type: application/json' -d @$HOME/files/projects/shire_project.json
   ```
 
 5. **Add members to an existing project**:    
   
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL//access/api/v1/projects/shire/users/bilbo \
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/access/api/v1/projects/shire/users/bilbo \
   -H 'Content-Type: application/json' \
   -d '{
-    "name" : "bildo",
+    "name" : "bilbo",
     "roles" : ["Developer"]
   }'
   ```
     
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL//access/api/v1/projects/shire/users/frodo \
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/access/api/v1/projects/shire/users/frodo \
   -H 'Content-Type: application/json' \
   -d '{
     "name" : "frodo",
@@ -50,7 +50,7 @@
 
 6. **List users of an existing project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-GetProjectUsers)):  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL//access/api/v1/projects/shire/users
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/access/api/v1/projects/shire/users
   ```
 
 
@@ -58,7 +58,7 @@
   
   Make a member a project administrator:  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL//access/api/v1/projects/shire/users/bilbo \ 
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/access/api/v1/projects/shire/users/bilbo \ 
   -H 'Content-Type: application/json' \
   -d '{ 
     "name" : "bilbo", 
@@ -68,7 +68,7 @@
 
   Assign the Developer role to a project member:   
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL//access/api/v1/projects/shire/users/frodo \ 
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT https://$JFROG_URL/access/api/v1/projects/shire/users/frodo \ 
   -H 'Content-Type: application/json' \
   -d '{ 
     "name" : "frodo", 
@@ -78,7 +78,7 @@
 
 8. **Delete an existing project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-DeleteExistingProject)):  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE https://$JFROG_URL//access/api/v1/projects/shire
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE https://$JFROG_URL/access/api/v1/projects/shire
   ```
 
 
