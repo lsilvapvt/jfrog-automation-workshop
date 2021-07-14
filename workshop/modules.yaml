@@ -14,6 +14,8 @@ modules:
         name: REST API - Projects
     concepts/04_jfrog_cli:
         name: JFrog CLI    
+    labs/10_jfrog_cli:
+        name: JFrog CLI - Examples   
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop

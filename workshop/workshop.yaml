@@ -9,4 +9,5 @@ modules:
     - labs/03_jfrog_rest_api_files
     - labs/04_jfrog_projects_01
     - concepts/04_jfrog_cli
+    - labs/10_jfrog_cli
     - finish

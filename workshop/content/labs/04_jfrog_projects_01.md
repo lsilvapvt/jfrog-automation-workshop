@@ -1,8 +1,7 @@
 
-### Managing Artifactory Projects
-
 1. **Get all projects** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-PROJECTS)):  
   ```execute
+  clear
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET https://$JFROG_URL/access/api/v1/projects
   ```
 
