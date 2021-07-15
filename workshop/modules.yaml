@@ -2,7 +2,7 @@ modules:
     index:
         name: Workshop Overview
         exit_sign: Start Workshop
-    concepts/03_jfrog_rest_api:
+    concepts/03_jfrog_rest-api:
         name: JFrog REST API
     labs/01_jfrog_rest_api:
         name: REST API - Authentication
@@ -18,6 +18,8 @@ modules:
         name: JFrog CLI - Configuration
     labs/11_jfrog_cli_repos:
         name: JFrog CLI - Artifacts   
+    concepts/05_jfrog_aql:
+        name: Artifactory Query Language
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop

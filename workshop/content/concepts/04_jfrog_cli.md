@@ -1,5 +1,3 @@
-### JFrog CLI
-
 <br/>
 
 The JFrog CLI Can be [downloaded](https://jfrog.com/getcli/) and installed on multiple clients.

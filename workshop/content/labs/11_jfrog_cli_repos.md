@@ -9,7 +9,7 @@
 
   ```execute-2
   clear
-  jfrog rt repo-create .files/superDockerRepo.json
+  jfrog rt repo-create ./files/superDockerRepo.json
   ```
 
 2. Inspect the repository configuration file used above ([spec](https://www.jfrog.com/confluence/display/JFROG/Repository+Configuration+JSON)):

@@ -1,5 +1,3 @@
-### JFrog REST API
-
 <br/>
 
 - Extensive and advanced API for all JFrog products
