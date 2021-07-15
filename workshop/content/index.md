@@ -18,9 +18,9 @@
 
 3. Artifactory Query Language
 
-4. File Spec
+4. GraphQL
 
-5. Webhooks
+5. File Spec
 
 <br/>
 
