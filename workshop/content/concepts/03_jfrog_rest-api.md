@@ -11,7 +11,7 @@
 
 - Fully documented and maintained
 
-- Include new released functionality
+- Includes new released functionality
 
 - Different options for authentication (basic auth, API key, access token)
 
