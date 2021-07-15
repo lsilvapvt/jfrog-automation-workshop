@@ -38,7 +38,7 @@
   clear
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
     -H 'Content-Type: text/plain' \
-    -d 'items.find({"stat.downloads":{"$gt":"1"}}).include("name","path","repo","size","stat.downloads")'
+    -d 'items.find({"stat.downloads":{"$gt":"15"}}).include("name","path","repo","size","stat.downloads")'
   ```
 
 
