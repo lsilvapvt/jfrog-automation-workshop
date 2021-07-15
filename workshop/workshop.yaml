@@ -13,4 +13,6 @@ modules:
     - labs/11_jfrog_cli_repos
     - concepts/05_jfrog_aql
     - labs/20_jfrog_aql_samples
+    - concepts/06_jfrog_graphql
+    - concepts/07_jfrog_filespec
     - finish

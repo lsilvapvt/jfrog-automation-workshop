@@ -9,13 +9,12 @@
 
   ```execute
   clear
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL//artifactory/api/search/aql  \
-  -H 'Content-Type: text/plain' \
-  -d 'items.find(
-    {
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
+    -H 'Content-Type: text/plain' \
+    -d 'items.find(
+      {
         "repo":{"$eq":"default-generic-local"}
-    }
-  )'
+      })'
   ```
 
 
@@ -23,9 +22,9 @@
 
   ```execute
   clear
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL//artifactory/api/search/aql  \
-  -H 'Content-Type: text/plain' \
-  -d $HOME/files/find-largest-files.aql
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
+    -H 'Content-Type: text/plain' \
+    -d $HOME/files/find-largest-files.aql
   ```
 
   Inspect the AQL file:
@@ -33,19 +32,13 @@
   file: ./files/find-largest-files.aql
   ```
 
-curl -uadmin:password -X POST \
-http://10.233.10.240/artifactory/api/search/aql \
--H 'Content-Type: text/plain' \
--d 'items.find({"stat.downloads":{"$gt":"1"}})'
-
-
 3. Find all files downloaded more than once
 
   ```execute
   clear
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL//artifactory/api/search/aql  \
-  -H 'Content-Type: text/plain' \
-  -d 'items.find({"stat.downloads":{"$gt":"1"}})'
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
+    -H 'Content-Type: text/plain' \
+    -d 'items.find({"stat.downloads":{"$gt":"1"}})'
   ```
 
 
@@ -53,10 +46,10 @@ http://10.233.10.240/artifactory/api/search/aql \
 
   ```execute
   clear
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL//artifactory/api/search/aql  \
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
   -H 'Content-Type: text/plain' \
   -d 'items.find(
-    {“type":"file",
+      { “type":"file",
         "size":{"$lt":"1000000000"},
         "stat.downloads":{"$eq":null},
         "@team":"dev",
@@ -64,9 +57,9 @@ http://10.233.10.240/artifactory/api/search/aql \
             {"name":{"$match":"*.png"}},
             {"name":{"$match":"*.jpg"}}
         ]
-    }
-  ).include("name","size")
-  .sort({"$desc":["size","name"]})'
+      }
+      ).include("name","size")
+      .sort({"$desc":["size","name"]})'
   ```
 
   Looking for image files PNG or JPG that:
@@ -80,38 +73,15 @@ http://10.233.10.240/artifactory/api/search/aql \
 <br/>
 
 
-#### 2. Artifacts
+#### 2. Generate AQL from the CLI
 
 <br/>
 
-1. Upload an artifact
-
   ```execute-2
   clear
-  jfrog rt upload ./files/find-large-videos.aql default-generic-local/enterprise-plus-training/find-large-videos.aql
+  export JFROG_CLI_LOG_LEVEL=DEBUG
+  jfrog rt search "default-generic-local/*.png" 
   ```
-
-2. Search for an artifact
-
-  ```execute-2
-  clear
-  jfrog rt search "default-generic-local/enterprise-plus-training/*.aql" 
-  ```
-
-3. Set properties for an artifact
-
-  ```execute-2
-  clear
-  jfrog rt set-props "default-generic-local/enterprise-plus-training/*.aql" "type=script;tested=no"
-  ```
-
-4. Delete artifacts
-
-  ```execute-2
-  clear
-  jfrog rt delete "default-generic-local/enterprise-plus-training/*.aql"
-  ```
-
 
 <br/>
 

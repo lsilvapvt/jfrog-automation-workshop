@@ -22,6 +22,10 @@ modules:
         name: Artifactory Query Language
     labs/20_jfrog_aql_samples:
         name: AQL Examples
+    concepts/06_jfrog_graphql:
+        name: GraphQL
+    concepts/concepts/07_jfrog_filespec:
+        name: File Spec
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop
