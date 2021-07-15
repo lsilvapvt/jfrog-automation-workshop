@@ -15,4 +15,5 @@ modules:
     - labs/20_jfrog_aql_samples
     - concepts/06_jfrog_graphql
     - concepts/07_jfrog_filespec
+    - labs/30_jfrog_filespec_samples
     - finish

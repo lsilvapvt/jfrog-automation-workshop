@@ -18,7 +18,7 @@
 
 #### AQL Domain Architecture  
 
-<img src="images/aql-01.png" alt="AQL" style="background-color:transparent;border:none;" />
+<img src="../images/aql-01.png" alt="AQL" style="background-color:transparent;border:none;" />
 
 <br/>
 

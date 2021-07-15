@@ -1,0 +1,14 @@
+{
+  "files": [
+    {
+      "pattern": "default-generic-local/enterprise-training/(*.aql)",
+      "target": "./mydownloads/enterprise-{1}",
+      "flat": "true"
+    },
+    {
+      "pattern": "default-generic-local/enterprise-plus-training/(*.aql)",
+      "target": "./mydownloads/enterpriseplus-{1}",
+      "flat": "true"
+    }
+  ]
+}

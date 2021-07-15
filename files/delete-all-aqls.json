@@ -1,0 +1,15 @@
+{
+    "files": [
+      {
+        "pattern": "*.aql",
+        "target": "default-generic-local/enterprise-training/"
+      },
+      {
+        "pattern": "*.aql",
+        "target": "default-generic-local/enterprise-plus-training/"
+      },
+      {
+        "pattern": "default-generic-local/enterprise*"
+      }
+    ]
+  }

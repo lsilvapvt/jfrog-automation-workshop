@@ -26,6 +26,8 @@ modules:
         name: GraphQL
     concepts/concepts/07_jfrog_filespec:
         name: File Spec
+    labs/30_jfrog_filespec_samples:
+        name: File Spec Examples
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop

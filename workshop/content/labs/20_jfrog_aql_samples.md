@@ -24,7 +24,7 @@
   clear
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
     -H 'Content-Type: text/plain' \
-    -d $HOME/files/find-largest-files.aql
+    -d @files/find-largest-files.aql
   ```
 
   Inspect the AQL file:
@@ -32,13 +32,13 @@
   file: ./files/find-largest-files.aql
   ```
 
-3. Find all files downloaded more than once
+3. Find all files downloaded more than 15 times
 
   ```execute
   clear
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
     -H 'Content-Type: text/plain' \
-    -d 'items.find({"stat.downloads":{"$gt":"1"}})'
+    -d 'items.find({"stat.downloads":{"$gt":"1"}}).include("name","path","repo","size","stat.downloads")'
   ```
 
 
@@ -49,7 +49,7 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/search/aql  \
   -H 'Content-Type: text/plain' \
   -d 'items.find(
-      { “type":"file",
+      { "type":"file",
         "size":{"$lt":"1000000000"},
         "stat.downloads":{"$eq":null},
         "@team":"dev",

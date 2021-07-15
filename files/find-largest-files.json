@@ -1,0 +1,13 @@
+{
+    "files": [
+      {
+        "aql": {
+          "items.find": {
+            "type":"file"
+          }
+        },
+        "sortBy": ["size","name"],
+        "sortOrder": "desc"
+      }
+    ]
+}

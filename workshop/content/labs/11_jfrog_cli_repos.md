@@ -37,11 +37,17 @@
 
 <br/>
 
-1. Upload an artifact
+1. Upload artifacts
 
+  Single file:
   ```execute-2
   clear
   jfrog rt upload ./files/find-large-videos.aql default-generic-local/enterprise-plus-training/find-large-videos.aql
+  ```
+
+  Multiple files: 
+  ```execute-2
+  jfrog rt u "./files/*.aql" default-generic-local/enterprise-plus-training/
   ```
 
 2. Search for an artifact
