@@ -12,4 +12,5 @@ modules:
     - labs/10_jfrog_cli
     - labs/11_jfrog_cli_repos
     - concepts/05_jfrog_aql
+    - labs/20_jfrog_aql_samples
     - finish

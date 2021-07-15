@@ -20,6 +20,8 @@ modules:
         name: JFrog CLI - Artifacts   
     concepts/05_jfrog_aql:
         name: Artifactory Query Language
+    labs/20_jfrog_aql_samples:
+        name: AQL Examples
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop
