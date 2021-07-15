@@ -38,34 +38,34 @@ Artifactory's REST API supports these forms of authentication:
     
   Test the System Ping API endpoint:  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/ping
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system/ping
   ```
 
   GET System Information  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system
   ```
 
   GET Artifactory Licenses  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/licenses
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system/licenses
   ```
 
   GET General System Configuration:    
   ```execute-2
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/system/configuration
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/system/configuration
   ```
 
   GET Storage Summary information:    
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" https://$JFROG_URL/artifactory/api/storageinfo
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/storageinfo
   ```
 
 
   Launch JFrog Platform user interface
   ```dashboard:open-url
   name: Platform
-  url: https://{{ JFROG_URL }}/
+  url: {{ JFROG_PROTOCOL }}://{{ JFROG_URL }}/
   ```
 
 <br/>

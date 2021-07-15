@@ -10,4 +10,5 @@ modules:
     - labs/04_jfrog_projects_01
     - concepts/04_jfrog_cli
     - labs/10_jfrog_cli
+    - labs/11_jfrog_cli_repos
     - finish

@@ -15,7 +15,9 @@ modules:
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     labs/10_jfrog_cli:
-        name: JFrog CLI - Examples   
+        name: JFrog CLI - Configuration
+    labs/11_jfrog_cli_repos:
+        name: JFrog CLI - Artifacts   
     finish:
         name: Workshop Summary
         exit_sign: Finish Workshop
@@ -29,5 +31,7 @@ config:
       value: mypassword
     - name: JFROG_URL
       value: myurl
+    - name: JFROG_PROTOCOL
+      value: https
     - name: JFROG_ACCESSTOKEN
       value: mytoken
