@@ -5,7 +5,7 @@
 
   ```execute-2
   clear
-  jfrog rt u --spec ./files/upload-aqls-spec.json --threads
+  jfrog rt u --spec ./files/upload-aqls-spec.json
   ```
 
   Inspect the spec file:
@@ -30,12 +30,12 @@
    
   ```execute-2
   clear
-  jfrog rt s --spec ./files/find-large-files.json
+  jfrog rt s --spec ./files/find-largest-files.json
   ```
 
   Inspect the spec file:
   ```editor:open-file
-  file: ./files/find-large-files.json
+  file: ./files/find-largest-files.json
   ```
 
 4. Delete multile files and folders 

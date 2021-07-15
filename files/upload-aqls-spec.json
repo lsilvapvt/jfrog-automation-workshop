@@ -1,12 +1,12 @@
 {
     "files": [
       {
-        "pattern": "find-large-videos.aql",
+        "pattern": "files/find-large-videos.aql",
         "target": "default-generic-local/enterprise-training/",
         "targetProps": "type=aql;level=enterprise"
       },
       {
-        "pattern": "find-large-files.aql",
+        "pattern": "files/find-largest-files.aql",
         "target": "default-generic-local/enterprise-plus-training/",
         "targetProps": "type=aql;level=enterpriseplus"
       }
