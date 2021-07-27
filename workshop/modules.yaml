@@ -12,8 +12,12 @@ modules:
         name: REST API - Artifacts
     labs/04_jfrog_projects_01:
         name: REST API - Projects
-    labs/05_jfrog_rest_api_distribution:
-        name: REST API - Distribution
+    labs/05_jfrog_rest_api_distribution_01:
+        name: REST API - Distribution Service Inspection
+    labs/05_jfrog_rest_api_distribution_02:
+        name: REST API - Distribution GPG Keys Management
+    labs/05_jfrog_rest_api_distribution_03:
+        name: REST API - Distribution Tasks       
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     labs/10_jfrog_cli:

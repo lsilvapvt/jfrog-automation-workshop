@@ -1,0 +1,31 @@
+{
+    "name": "TheMailerRelease",
+    "version": "1.0",
+    "dry_run": false,
+    "sign_immediately": false,
+    "description": "",
+    "release_notes": {
+      "syntax": "plain_text",
+      "content": "This is the Mailer release 1.0. Thanks for your support."
+    },
+    "spec": {
+      "queries": [
+        {
+          "aql": "items.find({ \"repo\" : \"example-repo-local\" })",
+          "query_name": "mysamplequery",
+          "mappings": [
+            {
+              "input": "example-repo-local/(.*)",
+              "output": "mailer-repo-local/$1"
+            }
+          ],
+          "added_props": [
+            {
+              "key": "myrelease",
+              "values": ["1.0"]
+            }
+          ]
+        }
+      ]
+    }
+  }
