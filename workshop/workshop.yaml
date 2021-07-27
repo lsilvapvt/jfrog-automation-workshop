@@ -11,6 +11,7 @@ modules:
     - labs/05_jfrog_rest_api_distribution_01
     - labs/05_jfrog_rest_api_distribution_02
     - labs/05_jfrog_rest_api_distribution_03
+    - lab/06_jfrog_rest_api_accesstokens
     - concepts/04_jfrog_cli
     - labs/10_jfrog_cli
     - labs/11_jfrog_cli_repos

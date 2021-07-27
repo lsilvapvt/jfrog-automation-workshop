@@ -5,7 +5,7 @@
 <br/>
 
 
-1. **Get All Versions of All Release Bundles** ([api](https://www.jfrog.com/confluence/display/JFROG/Distribution+REST+API#DistributionRESTAPI-GetallVersionsofallReleaseBundles)):  :    
+1. **Get All Versions of All Release Bundles** ([api](https://www.jfrog.com/confluence/display/JFROG/Distribution+REST+API#DistributionRESTAPI-GetallVersionsofallReleaseBundles)): 
   
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle?start_pos=0
@@ -79,8 +79,6 @@
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X GET $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle/distribution
   ```
-
-
 
 
 <br/>
