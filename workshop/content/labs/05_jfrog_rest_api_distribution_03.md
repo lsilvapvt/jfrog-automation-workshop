@@ -29,12 +29,12 @@
   
   Execute the REST API command to create the release bundle version:  
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle -T @files/bundles/createbundle1.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle -T files/bundles/createbundle1.json
   ```
 
   If the GPG Key in use contains a passphrase, pass it as part of the command:
   ```copy-and-edit
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -H "X-GPG-PASSPHRASE: PASSPHRASE_GOES_HERE"  -X POST $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle -T createbundle1.json -T @files/bundles/createbundle1.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -H "X-GPG-PASSPHRASE: PASSPHRASE_GOES_HERE"  -X POST $JFROG_PROTOCOL://$JFROG_URL/distribution/api/v1/release_bundle -T createbundle1.json -T files/bundles/createbundle1.json
   ```
 
 4. **Update a Release Bundle Version** ([api](https://www.jfrog.com/confluence/display/JFROG/Distribution+REST+API#DistributionRESTAPI-UpdateReleaseBundleVersion)):    

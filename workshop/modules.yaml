@@ -18,7 +18,7 @@ modules:
         name: REST API - Distribution GPG Keys 
     labs/05_jfrog_rest_api_distribution_03:
         name: REST API - Distribution Tasks    
-    lab/06_jfrog_rest_api_accesstokens:   
+    labs/06_jfrog_rest_api_accesstokens:   
         name: REST API - Access Tokens    
     concepts/04_jfrog_cli:
         name: JFrog CLI    
