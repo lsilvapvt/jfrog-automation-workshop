@@ -4,8 +4,20 @@
 
 <br/>
 
+1. **Create a groups of users** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplaceGroup)):
+  
+  Inspect the project configuration file:  
+  ```editor:open-file
+  file: ./files/onboard/group_avengers.json
+  ``` 
 
-1. **Create users** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplaceUser)):
+  Create the internal users
+  ```execute
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/groups/avengers -H "Content-Type: application/json" -d @$HOME/files/onboard/group_avengers.json
+  ```
+
+
+2. **Create users** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateorReplaceUser)):
   
   Inspect the project configuration file:  
   ```editor:open-file
@@ -14,22 +26,22 @@
 
   Create the internal users
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/api/security/users/srogers -H "Content-Type: application/json" -d @$HOME/files/onboard/user_steve_rogers.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/srogers -H "Content-Type: application/json" -d @$HOME/files/onboard/user_steve_rogers.json
   ```
 
   ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/api/security/users/bbanner -H "Content-Type: application/json" -d @$HOME/files/onboard/user_bruce_banner.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/bbanner -H "Content-Type: application/json" -d @$HOME/files/onboard/user_bruce_banner.json
   ```
 
 ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/api/security/users/nromanoff -H "Content-Type: application/json" -d @$HOME/files/onboard/user_natasha_romanoff.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/nromanoff -H "Content-Type: application/json" -d @$HOME/files/onboard/user_natasha_romanoff.json
   ```
 
 ```execute
-  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/api/security/users/tstark -H "Content-Type: application/json" -d @$HOME/files/onboard/user_tony_stark.json
+  curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/tstark -H "Content-Type: application/json" -d @$HOME/files/onboard/user_tony_stark.json
   ```
 
-2. **Create a new project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-AddaNewProject)):  
+3. **Create a new project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-AddaNewProject)):  
   
   Inspect the project configuration file:  
   ```editor:open-file
@@ -43,7 +55,7 @@
 
 
 
-3. **Add a project admin to the project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateUserinProject)):    
+4. **Add a project admin to the project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateUserinProject)):    
   
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/access/api/v1/projects/avngrs/users/srogers \
@@ -65,7 +77,7 @@
   }'
   ```
 
-5. **Create repositories** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateRepository)):  
+6. **Create repositories** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-CreateRepository)):  
 
   Inspect the repository configuration file:  
   ```editor:open-file

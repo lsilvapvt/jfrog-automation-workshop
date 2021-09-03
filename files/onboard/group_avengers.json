@@ -1,0 +1,7 @@
+{
+    "name": "avengers",
+    "description" : "The Avengers user group",
+    "autoJoin" : false,
+    "adminPrivileges" : false,
+    "realm": "internal"
+  }  
