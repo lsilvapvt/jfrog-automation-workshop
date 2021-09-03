@@ -1,0 +1,9 @@
+{
+    "key": "avngrs-docker-prod-local",
+    "projectKey": "avngrs",
+    "environments":["PROD"],    
+    "rclass" : "local",
+    "packageType": "docker",
+    "description": "The local repository for Dev Avengers images",
+    "xrayIndex" : "true"
+}

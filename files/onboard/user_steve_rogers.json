@@ -1,0 +1,13 @@
+{
+    "name": "srogers",
+    "email" : "srogers@avengers.com",
+    "password": "${DEFAULT_AVENGERS_PASSWORD}",
+    "admin": false,
+    "profileUpdatable": true,
+    "disableUIAccess" : false,
+    "internalPasswordDisabled": false,
+    "realm": "internal",
+    "groups" : [ "avengers" ],
+    "watchManager": false,
+    "policyManager": false
+  }

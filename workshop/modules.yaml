@@ -19,7 +19,9 @@ modules:
     labs/05_jfrog_rest_api_distribution_03:
         name: REST API - Distribution Tasks    
     labs/06_jfrog_rest_api_accesstokens:   
-        name: REST API - Access Tokens    
+        name: REST API - Access Tokens 
+    labs/07_jfrog_rest_api_onboardteam:   
+        name: REST API - Onboard Team Sample 
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     labs/10_jfrog_cli:
