@@ -11,7 +11,7 @@
   file: ./files/onboard/group_avengers.json
   ``` 
 
-  Create the internal users
+  Create the group of users
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/groups/avengers -H "Content-Type: application/json" -d @$HOME/files/onboard/group_avengers.json
   ```
@@ -66,7 +66,7 @@
   }'
   ```  
 
-4. **Add a group to the project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateGroupinProject)):    
+5. **Add a group to the project** ([api](https://www.jfrog.com/confluence/display/JFROG/Artifactory+REST+API#ArtifactoryRESTAPI-UpdateGroupinProject)):    
   
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/access/api/v1/projects/avngrs/groups/avengers \
