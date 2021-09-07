@@ -92,13 +92,5 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/avngrs-docker-prod-local -H "Content-Type: application/json" -d @$HOME/files/onboard/repo_docker_prod_local.json
   ```
   
----
-
-## TBD 
-
-- Create 3 repositories for the project, 1 Dev, 2 Prod 
-- Create 1 pipeline for the project with a promotion sample 
-- Cleanup 
-  Delete pipelines, repositories, project, group and users 
-
+  
 ---

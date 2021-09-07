@@ -22,6 +22,8 @@ modules:
         name: REST API - Access Tokens 
     labs/07_jfrog_rest_api_onboardteam:   
         name: REST API - Onboard Team Sample 
+    labs/08_jfrog_rest_api_cleanupteam:
+        name: REST API - Cleanup Team Sample
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     labs/10_jfrog_cli:
