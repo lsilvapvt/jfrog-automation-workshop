@@ -29,11 +29,11 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/bbanner
   ```
 
-```execute
+  ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/nromanoff
   ```
 
-```execute
+  ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/tstark
   ```
 

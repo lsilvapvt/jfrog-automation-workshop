@@ -17,6 +17,7 @@ modules:
     - concepts/04_jfrog_cli
     - labs/10_jfrog_cli
     - labs/11_jfrog_cli_repos
+    - labs/17_jfrog_cli_onboardteam
     - concepts/05_jfrog_aql
     - labs/20_jfrog_aql_samples
     - concepts/06_jfrog_graphql

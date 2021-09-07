@@ -30,6 +30,8 @@ modules:
         name: JFrog CLI - Configuration
     labs/11_jfrog_cli_repos:
         name: JFrog CLI - Artifacts   
+    labs/17_jfrog_cli_onboardteam:
+        name: JFrog CLI - Onboard Team Sample
     concepts/05_jfrog_aql:
         name: Artifactory Query Language
     labs/20_jfrog_aql_samples:

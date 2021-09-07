@@ -33,11 +33,11 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/bbanner -H "Content-Type: application/json" -d @$HOME/files/onboard/user_bruce_banner.json
   ```
 
-```execute
+  ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/nromanoff -H "Content-Type: application/json" -d @$HOME/files/onboard/user_natasha_romanoff.json
   ```
 
-```execute
+  ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/security/users/tstark -H "Content-Type: application/json" -d @$HOME/files/onboard/user_tony_stark.json
   ```
 
@@ -92,5 +92,5 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/avngrs-docker-prod-local -H "Content-Type: application/json" -d @$HOME/files/onboard/repo_docker_prod_local.json
   ```
   
-  
+
 ---
