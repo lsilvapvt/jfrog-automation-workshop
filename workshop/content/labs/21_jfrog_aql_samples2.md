@@ -1,5 +1,5 @@
 
-## AQL samples for artifacts cleanup purpoes
+## AQL sample queries for artifacts clean up tasks
 
 
 1. Find top 10 largest files across all repositories
@@ -48,10 +48,11 @@
 
 ---
 
-### How to use the output of an AQL to 
+### How to use the output of an AQL in CLI commands
 
-The output of an AQL can be used to build a FileSpec object to be used as input for a JFrog CLI delete command.
+The output of an AQL can be used to build a JSON object in [FileSpec format](https://www.jfrog.com/confluence/display/JFROG/FileSpec) to be used as the input for a JFrog CLI delete command.
 
+See [this sample script](https://gist.github.com/lsilvapvt/8917142abbfe177ed6d6ec08f8d7ab65) for a technique on how that can be done.
 
 <br/>
 
