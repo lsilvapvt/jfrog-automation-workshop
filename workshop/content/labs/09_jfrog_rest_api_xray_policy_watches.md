@@ -4,7 +4,11 @@
 
 <br/>
 
-### XRay Policies
+**XRay Policies**
+
+[Documentation](https://www.jfrog.com/confluence/display/JFROG/Creating+Xray+Policies+and+Rules).
+
+<br/>
 
 
 1. **Get All XRay Policies** ([api](https://www.jfrog.com/confluence/display/JFROG/Xray+REST+API#XrayRESTAPI-GetPolicies)):  
@@ -54,7 +58,7 @@
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/policies/Security-Policy -H "Content-Type: application/json" -d @$HOME/files/xray/security_policy_updated.json
   ```
 
-  Inspect the licenses policy updateconfiguration file:  
+  Inspect the licenses policy update configuration file:  
   ```editor:open-file
   file: ./files/xray/licenses_policy_updated.json
   ``` 
@@ -66,17 +70,25 @@
 
 5. **Delete an XRay Policy** ([api](https://www.jfrog.com/confluence/display/JFROG/Xray+REST+API#XrayRESTAPI-UpdatePolicy)):
   
+  Delete the security policy
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/policies/Security-Policy
   ```
 
+  Delete the licenses policy
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X DELETE $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/policies/Licenses-Policy
   ```
 
 ---
 
-### XRay Watches
+<br/>
+
+**XRay Watches**
+
+[Documentation](https://www.jfrog.com/confluence/display/JFROG/Configuring+Xray+Watches).
+
+<br/>
 
 6. **Get All XRay Watches** ([api](https://www.jfrog.com/confluence/display/JFROG/Xray+REST+API#XrayRESTAPI-GetWatches)):  
 
@@ -92,12 +104,24 @@
 
 8. **Create an XRay Watch** ([api](https://www.jfrog.com/confluence/display/JFROG/Xray+REST+API#XrayRESTAPI-GetWatch)):  
   
+  Inspect the watch configuration file:  
+  ```editor:open-file
+  file: ./files/xray/generic_watch.json
+  ``` 
+
+  Create the watch
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X POST $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches -H "Content-Type: application/json" -d @$HOME/files/xray/generic_watch.json
   ```
 
 9. **Update an XRay Watch** ([api](https://www.jfrog.com/confluence/display/JFROG/Xray+REST+API#XrayRESTAPI-UpdateWatch)):  
   
+  Inspect the watch update configuration file:  
+  ```editor:open-file
+  file: ./files/xray/generic_watch_updated.json
+  ``` 
+
+  Update the watch
   ```execute
   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" -X PUT $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches/generic_watch -H "Content-Type: application/json" -d @$HOME/files/xray/generic_watch_updated.json
   ```
