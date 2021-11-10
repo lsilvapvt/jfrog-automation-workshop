@@ -14,6 +14,7 @@ modules:
     - labs/06_jfrog_rest_api_accesstokens
     - labs/07_jfrog_rest_api_onboardteam
     - labs/08_jfrog_rest_api_cleanupteam
+    - labs/09_jfrog_rest_api_xray_policy_watches
     - concepts/04_jfrog_cli
     - labs/10_jfrog_cli
     - labs/11_jfrog_cli_repos

@@ -24,6 +24,8 @@ modules:
         name: REST API - Onboard Team Sample 
     labs/08_jfrog_rest_api_cleanupteam:
         name: REST API - Cleanup Team Sample
+    labs/09_jfrog_rest_api_xray_policy_watches:
+        name: REST API - XRay Policies and Watches
     concepts/04_jfrog_cli:
         name: JFrog CLI    
     labs/10_jfrog_cli:

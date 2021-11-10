@@ -1,0 +1,25 @@
+{
+  "general_data": {
+    "name": "generic_watch",
+    "description": "Test XRay watch for all builds"
+  },
+  "project_resources": {
+    "resources": [
+      {
+        "type": "all-builds",
+        "name": "All Builds",
+        "bin_mgr_id": "default"
+      }
+    ]
+  },
+  "assigned_policies": [
+    {
+      "name": "Security-Policy",
+      "type": "security"
+    },
+    {
+      "name": "Licenses-Policy",
+      "type": "license"
+    }
+  ]
+}

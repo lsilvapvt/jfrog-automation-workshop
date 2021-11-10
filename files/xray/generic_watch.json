@@ -1,0 +1,35 @@
+{
+  "general_data": {
+    "name": "generic_watch",
+    "description": "Test XRay watch for all builds, repositories and release bundles"
+  },
+  "project_resources": {
+    "resources": [
+      {
+        "type": "all-builds",
+        "name": "All Builds",
+        "bin_mgr_id": "default"
+      },
+      {
+        "type": "all-releaseBundles",
+        "name": "All Release Bundles",
+        "bin_mgr_id": "default"
+      },
+      {
+        "type": "all-repos",
+        "name": "All Repositories",
+        "bin_mgr_id": "default"
+      }
+    ]
+  },
+  "assigned_policies": [
+    {
+      "name": "Security-Policy",
+      "type": "security"
+    },
+    {
+      "name": "Licenses-Policy",
+      "type": "license"
+    }
+  ]
+}
