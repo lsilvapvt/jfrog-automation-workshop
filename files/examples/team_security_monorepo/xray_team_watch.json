@@ -1,0 +1,28 @@
+{
+  "general_data": {
+    "name": "acmeco_TEAMNAME_watch",
+    "description": "Test XRay watch for mono repository with includes for specific folders"
+  },
+  "project_resources": {
+    "resources": [
+      {
+        "type": "repository",
+        "name": "REPOSITORYNAME",
+        "bin_mgr_id": "default",
+        "repo_type": "local",
+        "filters": [
+          {
+            "type": "path-regex",
+            "value": "TEAMFOLDERPATH/.*"
+          }
+        ]        
+      }
+    ]
+  },
+  "assigned_policies": [
+    {
+      "name": "acmeco_security_policy",
+      "type": "security"
+    }
+  ]
+}

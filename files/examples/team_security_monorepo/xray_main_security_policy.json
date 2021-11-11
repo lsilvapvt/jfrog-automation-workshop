@@ -1,0 +1,52 @@
+{
+  "name": "acmeco_security_policy",
+  "description": "This is a test security policy created with the JFrog XRay REST API",
+  "type": "security",
+  "rules": [
+    {
+      "name": "High-CVE",
+      "priority": 1,
+      "actions": {
+        "fail_build": true,
+        "block_download": {
+          "unscanned": false,
+          "active": false
+        },
+        "block_release_bundle_distribution": true,
+        "create_ticket_enabled": true
+      },
+      "criteria": {
+        "cvss_range": {
+          "from": 9,
+          "to": 10
+        }
+      }
+    },
+    {
+      "name": "Medium-CVE",
+      "priority": 2,
+      "actions": {
+        "block_download": {
+          "unscanned": false,
+          "active": false
+        }
+      },
+      "criteria": {
+        "min_severity": "Medium"
+      }
+    },
+    {
+      "name": "Low-CVE",
+      "priority": 3,
+      "actions": {
+        "block_download": {
+          "unscanned": false,
+          "active": false
+        }
+      },
+      "criteria": {
+        "min_severity": "Low"
+      }
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+    "key": "acmeco-generic-dev-local",
+    "rclass" : "local",
+    "packageType": "generic",
+    "description": "The local repository for Dev files",
+    "xrayIndex" : "true"
+}

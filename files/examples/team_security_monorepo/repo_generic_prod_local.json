@@ -1,0 +1,7 @@
+{
+    "key": "acmeco-generic-prod-local",
+    "rclass" : "local",
+    "packageType": "generic",
+    "description": "The local repository for Production files",
+    "xrayIndex" : "true"
+}

@@ -1,0 +1,16 @@
+{
+    "files": [
+      {
+        "pattern": "files/*.aql",
+        "target": "acmeco-generic-dev-local/microservices/front-end"
+      },
+      {
+        "pattern": "files/*.json",
+        "target": "acmeco-generic-dev-local/microservices/order-svc"
+      },
+      {
+        "pattern": "files/onboard/*.json",
+        "target": "acmeco-generic-dev-local/microservices/catalog-svc"
+      }
+    ]
+  }
