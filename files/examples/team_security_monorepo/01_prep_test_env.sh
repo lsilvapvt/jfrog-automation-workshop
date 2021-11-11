@@ -22,12 +22,12 @@ set -e
 echo "Creating test Dev and Prod repositories"
 
 curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
-   -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories \
+   -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/acmeco-generic-dev-local \
    -H "Content-Type: application/json" \
    -d @repo_generic_dev_local.json
 
 curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
-   -X POST $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories \
+   -X PUT $JFROG_PROTOCOL://$JFROG_URL/artifactory/api/repositories/acmeco-generic-prod-local \
    -H "Content-Type: application/json" \
    -d @repo_generic_prod_local.json
 

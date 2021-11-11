@@ -1,0 +1,5 @@
+operations/frontend
+operations/catalog-svc
+operations/order-svc
+marketing/mailorder
+marketing/socialmedia

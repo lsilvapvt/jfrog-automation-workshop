@@ -18,17 +18,21 @@ set -e
 ## Script execution
 
 ## Delete TEAM assets 
-echo "Delete XRay watches"
 
-export TEAMNAME="frontend"
-export watchName="acmeco_${TEAMNAME}_watch"
-curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
-     -X DELETE $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches/${watchName}
+cat ./teams.txt | while read teamEntry
+do
+   TEAMNAME=$(echo "$teamEntry" | cut -d "/" -f 1 | tr -d " ")
+   TEAM_SUBFOLDER=$(echo "$teamEntry" | cut -d "/" -f 2 | tr -d " ")
 
-echo "Delete webhooks"
-echo "Delete Jira profiles"
-echo "Delete Folder from Dev Repository" 
+   echo "Delete XRay watch for ${TEAMNAME}_${TEAM_SUBFOLDER}"
+   export watchName="acmeco_${TEAMNAME}_${TEAM_SUBFOLDER}_watch"
+   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
+      -X DELETE $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches/${watchName}
 
+   # echo "Delete webhooks"
+   # echo "Delete Folder from Dev Repository" 
+
+done
 
 ## Delete generic assets 
 echo "Delete XRay policy"

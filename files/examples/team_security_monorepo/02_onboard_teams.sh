@@ -22,30 +22,29 @@ set -e
 export devMonoRepoName="acmeco-generic-dev-local"
 export prodMonoRepoName="acmeco-generic-dev-local"
 
-export TEAM_SUBFOLDER="frontend"
-export TEAMNAME="frontend"
+cat ./teams.txt | while read teamEntry
+do
+   TEAMNAME=$(echo "$teamEntry" | cut -d "/" -f 1 | tr -d " ")
+   TEAM_SUBFOLDER=$(echo "$teamEntry" | cut -d "/" -f 2 | tr -d " ")
 
-echo "Create a webhook for the team - TBD"
+   # echo "Create a webhook for the team - TBD"
 
-echo "Create a Jira profile for the team - TBD"
+   echo "Create a folder in the Dev repository for the team"
+   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
+      -X PUT ${JFROG_PROTOCOL}://${JFROG_URL}/artifactory/${devMonoRepoName}/${TEAMNAME}/${TEAM_SUBFOLDER}
 
-echo "Create a folder in the Dev repository for the team"
-curl --user $JFROGUSER:$JFROGPWD \
-     -X PUT ${JFROG_PROTOCOL}://${JFROG_URL}/artifactory/${devMonoRepoName}/${TEAM_SUBFOLDER}
+   # echo "Define permissions for the team to access the folder - TBD"
 
-echo "Define permissions for the team to access the folder - TBD"
+   echo "Create an XRay watch for the team. TBD: connect with webhook or Jira profile"
 
-echo "Create an XRay watch for the team that uses the webhook or Jira profile"
+   sed "s/TEAMNAME/${TEAMNAME}_${TEAM_SUBFOLDER}/g" xray_team_watch.json > xray_team_watch_tmp.json
+   sed -i "s/REPOSITORYNAME/$devMonoRepoName/g" xray_team_watch_tmp.json
+   sed -i "s/TEAMFOLDERPATH/${TEAMNAME}\/${TEAM_SUBFOLDER}/g" xray_team_watch_tmp.json
 
-TEAMFOLDERPATH=$TEAM_SUBFOLDER
+   curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
+      -X POST $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches \
+      -H "Content-Type: application/json" \
+      -d @xray_team_watch_tmp.json
 
-sed "s/TEAMNAME/$TEAMNAME/g" xray_team_watch.json > xray_team_watch_tmp.json
-sed -i "s/REPOSITORYNAME/$devMonoRepoName/g" xray_team_watch_tmp.json
-sed -i "s/TEAMFOLDERPATH/$TEAM_SUBFOLDER/g" xray_team_watch_tmp.json
-
-curl -H "Authorization: Bearer $JFROG_ACCESSTOKEN" \
-     -X POST $JFROG_PROTOCOL://$JFROG_URL/xray/api/v2/watches \
-     -H "Content-Type: application/json" \
-     -d @xray_team_watch_tmp.json
-
+done 
 echo "End of script, success!"
