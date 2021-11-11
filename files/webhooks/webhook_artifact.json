@@ -1,0 +1,27 @@
+{
+    "key": "notify_of_local_artifact_change",
+    "enabled": true,
+    "event_filter": {
+      "domain": "artifact",
+      "event_types": [
+        "deployed",
+        "copied",
+        "moved",
+        "deleted"
+      ],
+      "criteria": {
+        "anyLocal": true,
+        "anyRemote": false,
+        "excludePatterns": [],
+        "includePatterns": [],
+        "repoKeys": []
+      }
+    },
+    "handlers": [
+      {
+        "handler_type": "webhook",
+        "url": "https://webhook.site/YOUR_ID_GOES_HERE",
+        "secret": ""
+      }
+    ]
+  }

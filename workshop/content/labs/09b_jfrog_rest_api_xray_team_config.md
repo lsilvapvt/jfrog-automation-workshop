@@ -1,8 +1,26 @@
-<!-- XRay Policies and Watches -->
+<!-- XRay Bulk Policies and Watches for a Team -->
 
 <br/>
 
-**XRay Policies**
+**XRay Policies and Watches for a Team**
+
+- Create mono repo sample with structure of files 
+
+- Upload sample files for five teams to individual folders 
+  (use filespec?)
+
+- Create single policy 
+
+- Create watch per team using filter selection 
+
+Sample 2 - integrate with webhook: 
+- Create Webhook per team 
+- Associate team watch with team webhook
+
+Sample 3 - integrate with Jira ticket profile 
+- Create Jira profile for team 
+- Associate team watch with team Jira profile
+
 
 [Documentation](https://www.jfrog.com/confluence/display/JFROG/Creating+Xray+Policies+and+Rules).
 

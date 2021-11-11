@@ -15,12 +15,13 @@ modules:
     - labs/07_jfrog_rest_api_onboardteam
     - labs/08_jfrog_rest_api_cleanupteam
     - labs/09_jfrog_rest_api_xray_policy_watches
+    - labs/10_jfrog_rest_api_webhooks
     - concepts/04_jfrog_cli
-    - labs/10_jfrog_cli
-    - labs/11_jfrog_cli_repos
+    - labs/100_jfrog_cli
+    - labs/110_jfrog_cli_repos
     - concepts/05_jfrog_aql
-    - labs/20_jfrog_aql_samples
+    - labs/200_jfrog_aql_samples
     - concepts/06_jfrog_graphql
     - concepts/07_jfrog_filespec
-    - labs/30_jfrog_filespec_samples
+    - labs/300_jfrog_filespec_samples
     - finish

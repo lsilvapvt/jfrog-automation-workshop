@@ -26,21 +26,23 @@ modules:
         name: REST API - Cleanup Team Sample
     labs/09_jfrog_rest_api_xray_policy_watches:
         name: REST API - XRay Policies and Watches
+    labs/10_jfrog_rest_api_webhooks:
+        name: REST API - Webhooks
     concepts/04_jfrog_cli:
         name: JFrog CLI    
-    labs/10_jfrog_cli:
+    labs/100_jfrog_cli:
         name: JFrog CLI - Configuration
-    labs/11_jfrog_cli_repos:
+    labs/110_jfrog_cli_repos:
         name: JFrog CLI - Artifacts   
     concepts/05_jfrog_aql:
         name: Artifactory Query Language
-    labs/20_jfrog_aql_samples:
+    labs/200_jfrog_aql_samples:
         name: AQL Examples
     concepts/06_jfrog_graphql:
         name: GraphQL
     concepts/07_jfrog_filespec:
         name: File Spec
-    labs/30_jfrog_filespec_samples:
+    labs/300_jfrog_filespec_samples:
         name: File Spec Examples
     finish:
         name: Summary
